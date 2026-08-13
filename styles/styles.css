@@ -248,6 +248,27 @@ nav a:hover { color: var(--orange); }
 
 .btn-wa-sm { font-size: 14px; padding: 10px 22px; margin-top: 12px; }
 
+.btn-maps {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--blue-mid);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 12px;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(25,118,210,0.35);
+}
+
+.btn-maps:hover {
+  background: #1565a0;
+  transform: translateY(-1px);
+}
+
 .hero-wave {
   position: absolute;
   bottom: 0; left: 0; right: 0;
