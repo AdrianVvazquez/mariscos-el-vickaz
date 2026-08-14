@@ -1,7 +1,7 @@
 .blog-hero {
   position: relative;
   background: linear-gradient(145deg, #0c2d4a 0%, #0d4a7a 40%, #1565a0 75%, #1a7fc0 100%);
-  padding: 120px 24px 90px;
+  padding: 180px 24px 90px;
   overflow: hidden;
   text-align: center;
 }
