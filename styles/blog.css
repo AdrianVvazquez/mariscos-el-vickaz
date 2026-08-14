@@ -1,7 +1,7 @@
 .blog-hero {
   position: relative;
   background: linear-gradient(145deg, #0c2d4a 0%, #0d4a7a 40%, #1565a0 75%, #1a7fc0 100%);
-  padding: 140px 24px 90px;
+  padding: 120px 24px 90px;
   overflow: hidden;
   text-align: center;
 }
@@ -132,7 +132,7 @@
 }
 
 @media (max-width: 768px) {
-  .blog-hero { padding: 110px 20px 70px; }
+  .blog-hero { padding: 180px 20px 70px; }
   .posts-grid { grid-template-columns: 1fr; }
   .post-featured { padding: 24px 20px; }
 }
