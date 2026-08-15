@@ -769,13 +769,13 @@ function renderCart() {
           Agrega tus favoritos y aquí aparecerá el resumen.
         </p>
 
-        <button
+        <a
           class="btn-primary"
-          type="button"
+          href="index.html#menu"
           data-close-cart
         >
           Ver menú
-        </button>
+        </a>
       </div>
     `;
 
