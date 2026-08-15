@@ -64,7 +64,7 @@ const productData = [
     id: 'aguachile-negro',
     category: 'aguachiles',
     label: 'El de 3 salsas negras',
-    emoji: '🍤',
+    emoji: '🦐',
     description: 'Maggi, soya, inglesa, cebolla morada, pepino y camarón.',
     badge: 'Más pedido',
     image: "./assets/aguachile-negro.webp",
@@ -94,7 +94,7 @@ const productData = [
     id: 'aguachile-verde',
     category: 'aguachiles',
     label: 'En salsa verde',
-    emoji: '🌿',
+    emoji: '🦐',
     description: 'Cebolla morada, pepino, camarón y salsa especial de tomate con cilantro.',
     image: "./assets/aguachile-verde.webp",
     presentations: [
@@ -109,7 +109,7 @@ const productData = [
     id: 'tostada-aguachile-verde',
     category: 'tostadas',
     label: 'Tostada de aguachile · Salsa verde',
-    emoji: '🌿',
+    emoji: '🦐',
     image: "./assets/aguachile-verde.webp",
     description: 'Camarón, cebolla morada, pepino y salsa especial de tomate con cilantro.',
     fixedPrice: 30
@@ -118,7 +118,7 @@ const productData = [
     id: 'tostada-aguachile-negro',
     category: 'tostadas',
     label: 'Tostada de aguachile · Salsas negras',
-    emoji: '🍤',
+    emoji: '🦐',
     image: "./assets/aguachile-negro.webp",
     description: 'Camarón en 3 salsas (maggi, soya, inglesa), cebolla morada y pepino.',
     fixedPrice: 30
