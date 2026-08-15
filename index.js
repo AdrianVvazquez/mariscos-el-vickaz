@@ -92,9 +92,9 @@ const productData = [
   {
     id: 'aguachile-verde',
     category: 'aguachiles',
-    label: 'En salsa de aguacate',
+    label: 'En salsa verde',
     emoji: '🥑',
-    description: 'Cebolla morada, pepino y salsa especial con aguacate 100% michoacano.',
+    description: 'Cebolla morada, pepino y salsa especial de tomate y cilantro.',
     badge: 'Especial',
     image: "./assets/aguachile-verde.webp",
     presentations: [
@@ -108,10 +108,10 @@ const productData = [
   {
     id: 'tostada-aguachile-verde',
     category: 'tostadas',
-    label: 'Tostada de aguachile · Salsa de aguacate',
+    label: 'Tostada de aguachile · Salsa verde',
     emoji: '🌿',
     image: "./assets/aguachile-verde.webp",
-    description: 'Tostada con aguachile de camarón en salsa de aguacate.',
+    description: 'Tostada con aguachile de camarón en salsa verde.',
     fixedPrice: 30
   },
   {
@@ -133,12 +133,12 @@ const productData = [
     fixedPrice: 30
   },
   {
-    id: 'tostada-pulpo',
+    id: 'tostada-mixta',
     category: 'tostadas',
-    label: 'Tostada de pulpo',
+    label: 'Tostada mixta',
     emoji: '🐙',
-    image: "./assets/tostada-pulpo.webp",
-    description: 'Tostada con ceviche de pulpo.',
+    image: "./assets/tostada-mixta.webp",
+    description: 'Tostada con ceviche de pulpo, camarón y tilapia.',
     fixedPrice: 30
   },
   {
@@ -561,11 +561,12 @@ function openConfigurator(product) {
   const fillingOptions = [
     'Ceviche de camarón',
     'Ceviche de pescado de tilapia',
+    'Ceviche mixto',
     'Carne apache',
     'Tiritas de pescado',
     'Aguachile de 3 salsas negras',
     'Aguachile en salsa de mango',
-    'Aguachile en salsa de aguacate'
+    'Aguachile en salsa verde'
   ];
 
   els.configBody.innerHTML = `
