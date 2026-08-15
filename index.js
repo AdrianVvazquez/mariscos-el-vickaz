@@ -7,7 +7,7 @@ const productData = [
     category: 'ceviches',
     label: 'Ceviche de camarón',
     emoji: '🦐',
-    description: 'Jitomate, cebolla blanca, cilantro, limón y camarón fresco.',
+    description: 'Jitomate, cebolla blanca, cilantro, limón y camarón.',
     badge: 'Favorito',
     image: "./assets/ceviche-camaron.webp",
     presentations: [
@@ -49,7 +49,7 @@ const productData = [
     id: 'tiritas-pescado',
     category: 'ceviches',
     label: 'Tiritas de pescado',
-    emoji: '🥒',
+    emoji: '🐟',
     description: 'Pescado de tilapia, cebolla morada y pepino.',
     image: "./assets/tiritas-pescado.webp",
     presentations: [
@@ -64,8 +64,8 @@ const productData = [
     id: 'aguachile-negro',
     category: 'aguachiles',
     label: 'El de 3 salsas negras',
-    emoji: '🌑',
-    description: 'Magi, soya, inglesa, cebolla morada y pepino.',
+    emoji: '🍤',
+    description: 'Maggi, soya, inglesa, cebolla morada, pepino y camarón.',
     badge: 'Más pedido',
     image: "./assets/aguachile-negro.webp",
     presentations: [
@@ -80,7 +80,8 @@ const productData = [
     category: 'aguachiles',
     label: 'En salsa de mango',
     emoji: '🥭',
-    description: 'Cebolla morada, pepino y mango.',
+    description: 'Cebolla morada, pepino, mango y camarón.',
+    badge: 'Especial',
     image: "./assets/aguachile-mango.webp",
     presentations: [
       { id: '1l', label: '1 litro', price: 350 },
@@ -93,9 +94,8 @@ const productData = [
     id: 'aguachile-verde',
     category: 'aguachiles',
     label: 'En salsa verde',
-    emoji: '🥑',
-    description: 'Cebolla morada, pepino y salsa especial de tomate y cilantro.',
-    badge: 'Especial',
+    emoji: '🌿',
+    description: 'Cebolla morada, pepino, camarón y salsa especial de tomate con cilantro.',
     image: "./assets/aguachile-verde.webp",
     presentations: [
       { id: '1l', label: '1 litro', price: 350 },
@@ -111,16 +111,16 @@ const productData = [
     label: 'Tostada de aguachile · Salsa verde',
     emoji: '🌿',
     image: "./assets/aguachile-verde.webp",
-    description: 'Tostada con aguachile de camarón en salsa verde.',
+    description: 'Camarón, cebolla morada, pepino y salsa especial de tomate con cilantro.',
     fixedPrice: 30
   },
   {
     id: 'tostada-aguachile-negro',
     category: 'tostadas',
     label: 'Tostada de aguachile · Salsas negras',
-    emoji: '🌑',
+    emoji: '🍤',
     image: "./assets/aguachile-negro.webp",
-    description: 'Tostada con aguachile de 3 salsas negras.',
+    description: 'Camarón en 3 salsas (maggi, soya, inglesa), cebolla morada y pepino.',
     fixedPrice: 30
   },
   {
@@ -129,16 +129,16 @@ const productData = [
     label: 'Tostada de aguachile · Salsa de mango',
     emoji: '🥭',
     image: "./assets/aguachile-mango.webp",
-    description: 'Tostada con aguachile de camarón en salsa de mango.',
+    description: 'Camarón, cebolla morada, pepino y mango.',
     fixedPrice: 30
   },
   {
     id: 'tostada-mixta',
     category: 'tostadas',
     label: 'Tostada mixta',
-    emoji: '🐙',
+    emoji: '🐙🍤🐟',
     image: "./assets/tostada-mixta.webp",
-    description: 'Tostada con ceviche de pulpo, camarón y tilapia.',
+    description: 'Pulpo, camarón y tilapia, jitomate, cebolla blanca, cilantro y limón.',
     fixedPrice: 30
   },
   {
@@ -147,7 +147,7 @@ const productData = [
     label: 'Tostada de pescado',
     emoji: '🐟',
     image: "./assets/tostada-pescado.webp",
-    description: 'Tostada con ceviche de pescado de tilapia.',
+    description: 'Pescado de tilapia, jitomate, cebolla blanca, cilantro y limón.',
     fixedPrice: 30
   },
   {
@@ -156,7 +156,7 @@ const productData = [
     label: 'Tostada de camarón',
     emoji: '🦐',
     image: "./assets/tostada-camaron.webp",
-    description: 'Tostada con ceviche de camarón.',
+    description: 'Camarón, jitomate, cebolla blanca, cilantro y limón.',
     fixedPrice: 30
   },
   {
@@ -165,16 +165,16 @@ const productData = [
     label: 'Tostada de carne apache',
     emoji: '🥩',
     image: "./assets/tostada-carne-apache.webp",
-    description: 'Tostada con carne apache de res.',
+    description: 'Carne de res, jitomate, cebolla blanca, cilantro y limón.',
     fixedPrice: 30
   },
   {
     id: 'tostada-tiritas',
     category: 'tostadas',
     label: 'Tostada de tiritas de pescado',
-    emoji: '🥒',
+    emoji: '🐟',
     image: "./assets/tostada-tiritas.webp",
-    description: 'Tostada con tiritas de pescado, cebolla morada y pepino.',
+    description: 'Tiritas de pescado de tilapia, cebolla morada y pepino.',
     fixedPrice: 30
   },
 
@@ -184,7 +184,7 @@ const productData = [
     label: 'Tostitos preparados · Sencillo',
     emoji: '🔥',
     image: './assets/tostitos-verdes.webp',
-    description: 'Elige Tostitos Verdes o Flaming Hot y combínalos con cualquier ceviche, aguachile o especial.',
+    description: 'Elige Tostitos Verdes o Flaming Hot y combínalos con cualquier ceviche o aguachile.',
     fixedPrice: 50,
     configurable: true,
     servings: 1
@@ -195,7 +195,7 @@ const productData = [
     label: 'Tostitos preparados · Doble',
     emoji: '🔥🔥',
     image: './assets/tostitos-flaming-hot.webp',
-    description: 'Elige Tostitos Verdes o Flaming Hot y combínalos con cualquier ceviche, aguachile o especial.',
+    description: 'Elige Tostitos Verdes o Flaming Hot y combínalos con cualquier ceviche o aguachile.',
     fixedPrice: 80,
     configurable: true,
     servings: 2
@@ -751,6 +751,9 @@ function removeItem(index) {
 }
 
 function clearCart() {
+  const confirmed = confirm('¿Estás seguro de vaciar tu pedido?');
+  if (!confirmed) return;
+
   state.cart = [];
   saveCart();
   renderCart();
