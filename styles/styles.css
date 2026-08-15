@@ -61,7 +61,7 @@ nav a:hover, .nav-cart:hover { color:#fff; background:rgba(255,255,255,.08); }
 .btn-large { font-size:17px; padding:15px 30px; }
 .inline-count { margin-left:2px; }
 .hero-wave { position:absolute; left:0; right:0; bottom:-1px; line-height:0; }
-.hero-wave svg { display:block; width:100%; }
+.hero-wave svg, .hero-wave img { display:block; width:100%; height:clamp(40px,12vw,90px); }
 
 /* ===== Sections ===== */
 .section-header { text-align:center; margin-bottom:42px; }
