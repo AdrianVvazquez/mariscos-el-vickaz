@@ -134,6 +134,9 @@ nav a:hover, .nav-cart:hover { color:#fff; background:rgba(255,255,255,.08); }
 .contact-card-wa { border-color:rgba(37,211,102,.35); background:rgba(37,211,102,.08); }
 footer { background:#071e30; color:rgba(255,255,255,.6); text-align:center; padding:30px 24px; line-height:2; font-size:13px; }
 footer strong { color:rgba(255,255,255,.9); }
+.nav-social { display:flex; justify-content:center; margin:4px 0; }
+.nav-social a { display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,.08); transition:background .2s; }
+.nav-social a:hover { background:rgba(255,255,255,.18); }
 .footer-credit { color:rgba(255,255,255,.35); font-size:11px; }
 
 /* ===== Floating actions ===== */
@@ -201,7 +204,7 @@ footer strong { color:rgba(255,255,255,.9); }
 
 /* ===== Responsive ===== */
 @media (max-width:900px) {
-  nav a:not(.nav-whatsapp), nav .nav-cart { display:none; }
+  nav a:not(.nav-whatsapp):not(.nav-social a), nav .nav-cart { display:none; }
   .hamburger { display:block; }
   .menu-notes { grid-template-columns:repeat(2,1fr); }
   .contact-grid { grid-template-columns:1fr; }
