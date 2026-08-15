@@ -136,7 +136,7 @@ const productData = [
     id: 'tostada-mixta',
     category: 'tostadas',
     label: 'Tostada mixta',
-    emoji: '🐙🍤🐟',
+    emoji: '🐙',
     image: "./assets/tostada-mixta.webp",
     description: 'Pulpo, camarón y tilapia, jitomate, cebolla blanca, cilantro y limón.',
     fixedPrice: 30
