@@ -90,7 +90,7 @@ const productData = [
     ]
   },
   {
-    id: 'aguachile-aguacate',
+    id: 'aguachile-verde',
     category: 'aguachiles',
     label: 'En salsa de aguacate',
     emoji: '🥑',
@@ -108,10 +108,10 @@ const productData = [
   {
     id: 'tostada-aguachile-verde',
     category: 'tostadas',
-    label: 'Tostada de aguachile · Salsa verde',
+    label: 'Tostada de aguachile · Salsa de aguacate',
     emoji: '🌿',
     image: "./assets/aguachile-verde.webp",
-    description: 'Tostada con aguachile de camarón.',
+    description: 'Tostada con aguachile de camarón en salsa de aguacate.',
     fixedPrice: 30
   },
   {
@@ -224,8 +224,7 @@ const els = {
   configTitle: document.getElementById('configTitle'),
   configClose: document.getElementById('configClose'),
   configCancel: document.getElementById('configCancel'),
-  configAdd: document.getElementById('configAdd'),
-  floatingCartTotal: document.getElementById('floatingCartTotal')
+  configAdd: document.getElementById('configAdd')
 };
 
 function money(value) {
@@ -280,10 +279,6 @@ function updateCartUI() {
     node.textContent = count;
     node.classList.toggle('empty', count === 0);
   });
-
-  if (els.floatingCartTotal) {
-    els.floatingCartTotal.textContent = money(cartTotal());
-  }
 }
 
 function productById(id) {
@@ -710,7 +705,8 @@ function confirmConfigurator() {
     variantLabel: '',
     price: product.fixedPrice,
     quantity: 1,
-    customization
+    customization,
+    image: product.image
   });
 
   closeConfigurator();
@@ -800,8 +796,8 @@ function renderCart() {
       (item, index) => `
         <div class="cart-row">
           <img
-            src=${item.image}
-            alt=${item.name}
+            src="${item.image}"
+            alt="${escapeHtml(item.name)}"
             class="cart-thumb"
           />
 
@@ -1029,7 +1025,7 @@ function showToast(message) {
   }, 2100);
 }
 
-els.hamburger.addEventListener(
+els.hamburger?.addEventListener(
   'click',
   () =>
     els.mobileMenu.classList.toggle(
@@ -1058,7 +1054,7 @@ window.addEventListener(
     )
 );
 
-els.search.addEventListener(
+els.search?.addEventListener(
   'input',
   (event) => {
     state.search = event.target.value;
@@ -1066,7 +1062,7 @@ els.search.addEventListener(
   }
 );
 
-els.filterPills.addEventListener(
+els.filterPills?.addEventListener(
   'click',
   (event) => {
     const button =
@@ -1111,12 +1107,12 @@ els.filterPills.addEventListener(
 
 document
   .getElementById('cartClose')
-  .addEventListener(
+  ?.addEventListener(
     'click',
     closeCart
   );
 
-els.cartOverlay.addEventListener(
+els.cartOverlay?.addEventListener(
   'click',
   (event) => {
     if (
@@ -1128,22 +1124,22 @@ els.cartOverlay.addEventListener(
   }
 );
 
-els.configClose.addEventListener(
+els.configClose?.addEventListener(
   'click',
   closeConfigurator
 );
 
-els.configCancel.addEventListener(
+els.configCancel?.addEventListener(
   'click',
   closeConfigurator
 );
 
-els.configAdd.addEventListener(
+els.configAdd?.addEventListener(
   'click',
   confirmConfigurator
 );
 
-els.configOverlay.addEventListener(
+els.configOverlay?.addEventListener(
   'click',
   (event) => {
     if (
@@ -1187,12 +1183,15 @@ const observer =
 
 document
   .querySelectorAll(
-    '.contact-card, .trust-item, .section-header, .menu-cta'
+    '.contact-card, .trust-item, .section-header, .menu-cta, .post'
   )
   .forEach((el) => {
     el.classList.add('fade-in');
     observer.observe(el);
   });
 
-renderMenu();
+if (els.menuResults) {
+  renderMenu();
+}
+
 updateCartUI();
