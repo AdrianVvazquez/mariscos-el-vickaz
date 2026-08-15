@@ -13,8 +13,8 @@ const productData = [
     presentations: [
       { id: '1l', label: '1 litro', price: 260 },
       { id: 'half', label: '1/2 litro', price: 130 },
-      { id: '355', label: '355 ml', price: 90 },
-      { id: '236', label: '236 ml', price: 70 }
+      { id: '355', label: 'Mediano (vaso #12 / 355 ml)', price: 90 },
+      { id: '236', label: 'Chico (vaso #8 / 236 ml)', price: 70 }
     ]
   },
   {
@@ -27,8 +27,8 @@ const productData = [
     presentations: [
       { id: '1l', label: '1 litro', price: 260 },
       { id: 'half', label: '1/2 litro', price: 130 },
-      { id: '355', label: '355 ml', price: 90 },
-      { id: '236', label: '236 ml', price: 70 }
+      { id: '355', label: 'Mediano (vaso #12 / 355 ml)', price: 90 },
+      { id: '236', label: 'Chico (vaso #8 / 236 ml)', price: 70 }
     ]
   },
   {
@@ -41,8 +41,8 @@ const productData = [
     presentations: [
       { id: '1l', label: '1 litro', price: 260 },
       { id: 'half', label: '1/2 litro', price: 130 },
-      { id: '355', label: '355 ml', price: 90 },
-      { id: '236', label: '236 ml', price: 70 }
+      { id: '355', label: 'Mediano (vaso #12 / 355 ml)', price: 90 },
+      { id: '236', label: 'Chico (vaso #8 / 236 ml)', price: 70 }
     ]
   },
   {
@@ -55,8 +55,8 @@ const productData = [
     presentations: [
       { id: '1l', label: '1 litro', price: 260 },
       { id: 'half', label: '1/2 litro', price: 130 },
-      { id: '355', label: '355 ml', price: 90 },
-      { id: '236', label: '236 ml', price: 70 }
+      { id: '355', label: 'Mediano (vaso #12 / 355 ml)', price: 90 },
+      { id: '236', label: 'Chico (vaso #8 / 236 ml)', price: 70 }
     ]
   },
 
@@ -71,8 +71,8 @@ const productData = [
     presentations: [
       { id: '1l', label: '1 litro', price: 350 },
       { id: 'half', label: '1/2 litro', price: 180 },
-      { id: '355', label: '355 ml', price: 130 },
-      { id: '236', label: '236 ml', price: 90 }
+      { id: '355', label: 'Mediano (vaso #12 / 355 ml)', price: 130 },
+      { id: '236', label: 'Chico (vaso #8 / 236 ml)', price: 90 }
     ]
   },
   {
@@ -86,8 +86,8 @@ const productData = [
     presentations: [
       { id: '1l', label: '1 litro', price: 350 },
       { id: 'half', label: '1/2 litro', price: 180 },
-      { id: '355', label: '355 ml', price: 130 },
-      { id: '236', label: '236 ml', price: 90 }
+      { id: '355', label: 'Mediano (vaso #12 / 355 ml)', price: 130 },
+      { id: '236', label: 'Chico (vaso #8 / 236 ml)', price: 90 }
     ]
   },
   {
@@ -100,8 +100,8 @@ const productData = [
     presentations: [
       { id: '1l', label: '1 litro', price: 350 },
       { id: 'half', label: '1/2 litro', price: 180 },
-      { id: '355', label: '355 ml', price: 130 },
-      { id: '236', label: '236 ml', price: 90 }
+      { id: '355', label: 'Mediano (vaso #12 / 355 ml)', price: 130 },
+      { id: '236', label: 'Chico (vaso #8 / 236 ml)', price: 90 }
     ]
   },
 
