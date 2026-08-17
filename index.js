@@ -129,7 +129,7 @@ const productData = [
     label: 'Tostada de aguachile · Salsa de mango',
     emoji: '🥭',
     image: "./assets/aguachile-mango.webp",
-    description: 'Camarón, cebolla morada, pepino y mango.',
+    description: 'Camarón, cebolla morada, pepino y salsa de mango.',
     fixedPrice: 30
   },
   {
@@ -138,7 +138,7 @@ const productData = [
     label: 'Tostada mixta',
     emoji: '🐙',
     image: "./assets/tostada-mixta.webp",
-    description: 'Pulpo, camarón y tilapia, jitomate, cebolla blanca, cilantro y limón.',
+    description: 'Pulpo, camarón, tilapia, jitomate, cebolla blanca, cilantro y limón.',
     fixedPrice: 30
   },
   {
@@ -333,7 +333,7 @@ function renderMenu() {
     [
       'ceviches',
       'Ceviches',
-      'Frescos, cítricos y preparados al momento.'
+      'Frescos, cítricos y servidos al momento.'
     ],
     [
       'aguachiles',
