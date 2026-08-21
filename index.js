@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '524521628312';
+const WHATSAPP_NUMBER = '524525182817';
 const CART_KEY = 'vickaz-cart-v2';
 
 const productData = [
